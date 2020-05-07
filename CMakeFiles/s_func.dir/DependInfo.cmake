@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/john/repos/sniffer/s_func.c" "/home/john/repos/sniffer/CMakeFiles/s_func.dir/s_func.c.o"
+  "/home/john/repos/pcap-sniffer/s_func.c" "/home/john/repos/pcap-sniffer/CMakeFiles/s_func.dir/s_func.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/john/repos/sniffer/sniff.c" "/home/john/repos/sniffer/CMakeFiles/sniff.dir/sniff.c.o"
+  "/home/john/repos/pcap-sniffer/sniff.c" "/home/john/repos/pcap-sniffer/CMakeFiles/sniff.dir/sniff.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/john/repos/sniffer/CMakeFiles/s_func.dir/DependInfo.cmake"
+  "/home/john/repos/pcap-sniffer/CMakeFiles/s_func.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

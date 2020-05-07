@@ -1,4 +1,4 @@
-/home/john/repos/sniffer/CMakeFiles/rebuild_cache.dir
-/home/john/repos/sniffer/CMakeFiles/edit_cache.dir
-/home/john/repos/sniffer/CMakeFiles/s_func.dir
-/home/john/repos/sniffer/CMakeFiles/sniff.dir
+/home/john/repos/pcap-sniffer/CMakeFiles/rebuild_cache.dir
+/home/john/repos/pcap-sniffer/CMakeFiles/edit_cache.dir
+/home/john/repos/pcap-sniffer/CMakeFiles/s_func.dir
+/home/john/repos/pcap-sniffer/CMakeFiles/sniff.dir

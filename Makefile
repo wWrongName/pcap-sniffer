@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/john/repos/sniffer
+CMAKE_SOURCE_DIR = /home/john/repos/pcap-sniffer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/repos/sniffer
+CMAKE_BINARY_DIR = /home/john/repos/pcap-sniffer
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/sniffer/CMakeFiles /home/john/repos/sniffer/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/pcap-sniffer/CMakeFiles /home/john/repos/pcap-sniffer/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/sniffer/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/pcap-sniffer/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
