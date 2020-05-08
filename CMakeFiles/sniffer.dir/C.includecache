@@ -11,14 +11,12 @@ pcap.h
 -
 netinet/in.h
 -
+arpa/inet.h
+-
 
 /home/john/repos/pcap-sniffer/sniff.c
 stdio.h
 -
 s_func.h
 /home/john/repos/pcap-sniffer/s_func.h
-pcap.h
--
-netinet/in.h
--
 

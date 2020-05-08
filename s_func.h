@@ -3,6 +3,7 @@
 
 #include <pcap.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 
 #define ETHER_ADDR_LEN 6
 #define SIZE_ETHERNET 14
