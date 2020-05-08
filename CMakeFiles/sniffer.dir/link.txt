@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/sniffer.dir/sniff.c.o  -o sniffer libs_func.a /usr/lib/x86_64-linux-gnu/libpcap.so 
