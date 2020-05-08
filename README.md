@@ -1,5 +1,5 @@
 # PCAP-SNIFFER
-#### all tests was made on Ubuntu 18.04
+#### all tests were made on Ubuntu 18.04
 In order to build project, you need run
 ```
 cmake
