@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/john/repos/pcap-sniffer
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,17 +124,17 @@ s_func/fast:
 .PHONY : s_func/fast
 
 #=============================================================================
-# Target rules for targets named sniff
+# Target rules for targets named sniffer
 
 # Build rule for target.
-sniff: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sniff
-.PHONY : sniff
+sniffer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sniffer
+.PHONY : sniffer
 
 # fast build rule for target.
-sniff/fast:
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/build
-.PHONY : sniff/fast
+sniffer/fast:
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/build
+.PHONY : sniffer/fast
 
 s_func.o: s_func.c.o
 
@@ -169,7 +169,7 @@ sniff.o: sniff.c.o
 
 # target to build an object file
 sniff.c.o:
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/sniff.c.o
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/sniff.c.o
 .PHONY : sniff.c.o
 
 sniff.i: sniff.c.i
@@ -178,7 +178,7 @@ sniff.i: sniff.c.i
 
 # target to preprocess a source file
 sniff.c.i:
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/sniff.c.i
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/sniff.c.i
 .PHONY : sniff.c.i
 
 sniff.s: sniff.c.s
@@ -187,7 +187,7 @@ sniff.s: sniff.c.s
 
 # target to generate assembly for a file
 sniff.c.s:
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/sniff.c.s
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/sniff.c.s
 .PHONY : sniff.c.s
 
 # Help Target
@@ -196,10 +196,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... s_func"
-	@echo "... sniff"
+	@echo "... rebuild_cache"
+	@echo "... sniffer"
 	@echo "... s_func.o"
 	@echo "... s_func.i"
 	@echo "... s_func.s"

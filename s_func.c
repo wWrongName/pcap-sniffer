@@ -12,6 +12,6 @@ void read_data(unsigned char *args, const struct pcap_pkthdr *header, const unsi
 };
 
 void show_data(const struct eth* ethernet, const struct ip* t_ip) {
-    printf("Source IP: %s\n",      inet_ntoa(t_ip->src));
+    printf("Source IP: %s\n", inet_ntoa(t_ip->src));
 	printf("Destination IP: %s\n", inet_ntoa(t_ip->dst));
 };

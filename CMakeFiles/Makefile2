@@ -97,39 +97,39 @@ clean: CMakeFiles/s_func.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sniff.dir
+# Target rules for target CMakeFiles/sniffer.dir
 
 # All Build rule for target.
-CMakeFiles/sniff.dir/all: CMakeFiles/s_func.dir/all
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/depend
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/john/repos/pcap-sniffer/CMakeFiles --progress-num=3,4 "Built target sniff"
-.PHONY : CMakeFiles/sniff.dir/all
+CMakeFiles/sniffer.dir/all: CMakeFiles/s_func.dir/all
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/depend
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/john/repos/pcap-sniffer/CMakeFiles --progress-num=3,4 "Built target sniffer"
+.PHONY : CMakeFiles/sniffer.dir/all
 
 # Include target in all.
-all: CMakeFiles/sniff.dir/all
+all: CMakeFiles/sniffer.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sniff.dir/rule: cmake_check_build_system
+CMakeFiles/sniffer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/pcap-sniffer/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sniff.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sniffer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/repos/pcap-sniffer/CMakeFiles 0
-.PHONY : CMakeFiles/sniff.dir/rule
+.PHONY : CMakeFiles/sniffer.dir/rule
 
 # Convenience name for target.
-sniff: CMakeFiles/sniff.dir/rule
+sniffer: CMakeFiles/sniffer.dir/rule
 
-.PHONY : sniff
-
-# clean rule for target.
-CMakeFiles/sniff.dir/clean:
-	$(MAKE) -f CMakeFiles/sniff.dir/build.make CMakeFiles/sniff.dir/clean
-.PHONY : CMakeFiles/sniff.dir/clean
+.PHONY : sniffer
 
 # clean rule for target.
-clean: CMakeFiles/sniff.dir/clean
+CMakeFiles/sniffer.dir/clean:
+	$(MAKE) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/clean
+.PHONY : CMakeFiles/sniffer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sniffer.dir/clean
 
 .PHONY : clean
 
