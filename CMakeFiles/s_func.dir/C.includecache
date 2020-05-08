@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/john/repos/pcap-sniffer/s_func.c
+s_func.h
+/home/john/repos/pcap-sniffer/s_func.h
+
+/home/john/repos/pcap-sniffer/s_func.h
+pcap.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
