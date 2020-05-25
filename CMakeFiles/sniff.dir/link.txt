@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/sniff.dir/sniff.c.o  -o sniff libs_func.a 
